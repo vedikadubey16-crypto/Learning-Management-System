@@ -127,7 +127,7 @@ def recommend(data: StudentData):
 
             recommendations.append({
                 "course": real_course_name,
-                "probability": float(probabilities[index])
+                "probability": round(float(probabilities[index]) * 100, 2)
             })
 
         # Stop after getting top 2 valid recommendations
